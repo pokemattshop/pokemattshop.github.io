@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pokematt Store</title>
+
+  <!-- Snipcart -->
+  <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
+  <div hidden id="snipcart" data-api-key="YOUR_API_KEY"></div>
+
+  <style>
+    body { font-family: Arial; margin:0; }
+    header { background:#000; color:#fff; padding:20px; display:flex; justify-content:space-between; }
+    .logo { font-size:26px; font-weight:bold; }
+    .hero { padding:100px 30px; background:#111; color:#fff; }
+    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; padding:30px; }
+    .product { border:1px solid #eee; padding:15px; text-align:center; }
+    button { padding:10px 15px; background:#000; color:#fff; border:none; cursor:pointer; }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">POKEMATT</div>
+  <button class="snipcart-checkout">🛒 Cart</button>
+</header>
+
+<section class="hero">
+  <h1>LEVEL UP YOUR STYLE</h1>
+  <p>Pokémon Plush & Collectibles</p>
+</section>
+
+<section class="grid">
+
+  <div class="product">
+    <img src="https://img.pokemondb.net/sprites/home/normal/pikachu.png">
+    <h3>Pikachu Plush</h3>
+    <p>£19.99</p>
+    <button
+      class="snipcart-add-item"
+      data-item-id="pikachu"
+      data-item-price="19.99"
+      data-item-url="/"
+      data-item-description="Pikachu Plush Toy"
+      data-item-image="https://img.pokemondb.net/sprites/home/normal/pikachu.png"
+      data-item-name="Pikachu Plush">
+      Add to cart
+    </button>
+  </div>
+
+  <div class="product">
+    <img src="https://img.pokemondb.net/sprites/home/normal/gengar.png">
+    <h3>Gengar Plush</h3>
+    <p>£19.99</p>
+    <button class="snipcart-add-item"
+      data-item-id="gengar"
+      data-item-price="19.99"
+      data-item-url="/"
+      data-item-name="Gengar Plush">
+      Add to cart
+    </button>
+  </div>
+
+</section>
+
+</body>
+</html>
