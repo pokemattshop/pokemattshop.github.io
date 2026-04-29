@@ -1,68 +1,106 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Pokematt Store</title>
-
-  <!-- Snipcart -->
-  <script async src="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.js"></script>
-  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.31/default/snipcart.css" />
-  <div hidden id="snipcart" data-api-key="YOUR_API_KEY"></div>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokematt Shop</title>
   <style>
-    body { font-family: Arial; margin:0; }
-    header { background:#000; color:#fff; padding:20px; display:flex; justify-content:space-between; }
-    .logo { font-size:26px; font-weight:bold; }
-    .hero { padding:100px 30px; background:#111; color:#fff; }
-    .grid { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; padding:30px; }
-    .product { border:1px solid #eee; padding:15px; text-align:center; }
-    button { padding:10px 15px; background:#000; color:#fff; border:none; cursor:pointer; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+    }
+
+    header {
+      background: #111;
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #ff4d4d, #ff9900);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      border: none;
+      background: white;
+      color: black;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    .section {
+      padding: 40px 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
 
 <body>
 
 <header>
-  <div class="logo">POKEMATT</div>
-  <button class="snipcart-checkout">🛒 Cart</button>
+  <div><strong>Pokematt</strong></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Deals</a>
+    <a href="#">Contact</a>
+  </nav>
 </header>
 
 <section class="hero">
-  <h1>LEVEL UP YOUR STYLE</h1>
-  <p>Pokémon Plush & Collectibles</p>
+  <h1>Welcome to Pokematt</h1>
+  <p>Cards, collectibles & mystery packs</p>
+  <button>Shop Now</button>
 </section>
 
-<section class="grid">
-
-  <div class="product">
-    <img src="https://img.pokemondb.net/sprites/home/normal/pikachu.png">
-    <h3>Pikachu Plush</h3>
-    <p>£19.99</p>
-    <button
-      class="snipcart-add-item"
-      data-item-id="pikachu"
-      data-item-price="19.99"
-      data-item-url="/"
-      data-item-description="Pikachu Plush Toy"
-      data-item-image="https://img.pokemondb.net/sprites/home/normal/pikachu.png"
-      data-item-name="Pikachu Plush">
-      Add to cart
-    </button>
+<section class="section">
+  <h2>Featured Items</h2>
+  <div class="grid">
+    <div class="card">Product 1</div>
+    <div class="card">Product 2</div>
+    <div class="card">Product 3</div>
+    <div class="card">Product 4</div>
   </div>
-
-  <div class="product">
-    <img src="https://img.pokemondb.net/sprites/home/normal/gengar.png">
-    <h3>Gengar Plush</h3>
-    <p>£19.99</p>
-    <button class="snipcart-add-item"
-      data-item-id="gengar"
-      data-item-price="19.99"
-      data-item-url="/"
-      data-item-name="Gengar Plush">
-      Add to cart
-    </button>
-  </div>
-
 </section>
+
+<footer>
+  © 2026 Pokematt. All rights reserved.
+</footer>
 
 </body>
-</html
+</html>
